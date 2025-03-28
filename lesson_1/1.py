@@ -25,7 +25,7 @@ def check(graph1: Graph, graph2: Graph):
         return
 
     for perm in permutations(graph2.edges.keys()):
-        # перемешиваем вершины второго графа, то есть сейчас i-ая вершина 1-ого графа становится с номером perm[v]
+        # перемешиваем вершины второго графа, то есть сейчас i-ая вершина 1-ого графа становится с номером perm[i]
         good_perm = True
         for fr in graph1.edges:
             for to in graph1.edges[fr]:  # двумя for смотрим все ребра в первом графе
